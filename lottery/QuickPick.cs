@@ -9,7 +9,6 @@ namespace lottery
             int gameLenght = 7;
             Console.WriteLine("Please enter a number from 4 to 50, to select the number of games you would like to play ");
             int selectedGames = int.Parse(Console.ReadLine());
-            int TotalNumbers = selectedGames * 7;
             Random random = new Random();
             IDictionary<int, int[]> ticketGame = new Dictionary<int, int[]>(selectedGames);  
             for (int i = 0; i < selectedGames;)
